@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9F7236D-11CB-4231-B1EF-42C9CC2C66FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inventory_Solutions</RootNamespace>
+    <AssemblyName>Inventory_Solutions</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBConnect.cs" />
+    <Compile Include="frmAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddProduct.Designer.cs">
+      <DependentUpon>frmAddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminLogin.Designer.cs">
+      <DependentUpon>frmAdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBillPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBillPrint.Designer.cs">
+      <DependentUpon>frmBillPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDIParent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDIParent.Designer.cs">
+      <DependentUpon>frmMDIParent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductRecords.Designer.cs">
+      <DependentUpon>frmProductRecords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseProduct.Designer.cs">
+      <DependentUpon>frmPurchaseProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstart.Designer.cs">
+      <DependentUpon>frmstart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewProduct.Designer.cs">
+      <DependentUpon>frmViewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddProduct.resx">
+      <DependentUpon>frmAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminLogin.resx">
+      <DependentUpon>frmAdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBillPrint.resx">
+      <DependentUpon>frmBillPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDIParent.resx">
+      <DependentUpon>frmMDIParent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductRecords.resx">
+      <DependentUpon>frmProductRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseProduct.resx">
+      <DependentUpon>frmPurchaseProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstart.resx">
+      <DependentUpon>frmstart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewProduct.resx">
+      <DependentUpon>frmViewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
